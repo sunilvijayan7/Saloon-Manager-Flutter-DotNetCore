@@ -1,6 +1,6 @@
 
-<h1 align="center">Saloon Manager / Administrator Application</h1>
-<h3 align="center">Saloon Manager is a complete wellness appointment booking application, powered by Blazor,Flutter and Microsoft DotNet Core and SQL Server. It helps to run a beauty or wellness business with industry-leading, free-to-use-software for managing appointment bookings,Clients Management, point-of-sale, customer records, staffing, inventory, financial reporting and much more.
+<h1 align="left"> :blush: :blush: :blush: Saloon Manager / Administrator Application</h1>
+<h3 align="left">Saloon Manager is a complete wellness appointment booking application, powered by Blazor,Flutter and Microsoft DotNet Core and SQL Server. It helps to run a beauty or wellness business with industry-leading, free-to-use-software for managing appointment bookings,Clients Management, point-of-sale, customer records, staffing, inventory, financial reporting and much more.
 </h3>
 
 
