@@ -43,7 +43,7 @@
 <h4>:blush: :blush: :blush: Mobile App Screens</h4>
 <p align="center">
 <img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/BlockedTime-Mobile.JPG" width="260" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Calendar-Mobile.jpg" width="260" height="400"/>
+
 <img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Calendar-Mobile.png" width="260" height="400"/>
 <img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/ClientsMobile.JPG" width="260" height="400"/>
 <img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/DashboardMenuMobile.JPG" width="260" height="400"/>
