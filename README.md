@@ -42,19 +42,19 @@
 
 <h4>:blush: :blush: :blush: Mobile App Screens</h4>
 <p align="center">
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/BlockedTime-Mobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Calendar-Mobile.jpg" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Calendar-Mobile.png" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/ClientsMobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/DashboardMenuMobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/DashboardMobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/LoginMobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/NewAppointment-Mobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Notification-Message-Mobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Register Mobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Services-Mobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/UserPermissions-Mobile.JPG" width="200" height="400"/>
-<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Vocuhers Mobile.JPG" width="200" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/BlockedTime-Mobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Calendar-Mobile.jpg" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Calendar-Mobile.png" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/ClientsMobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/DashboardMenuMobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/DashboardMobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/LoginMobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/NewAppointment-Mobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Notification-Message-Mobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Register Mobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Services-Mobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/UserPermissions-Mobile.JPG" width="260" height="400"/>
+<img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Mobile/Vocuhers Mobile.JPG" width="260" height="400"/>
 </p>
 
 <p> The app will serve in Desktop mode with all features.</p>
