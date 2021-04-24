@@ -78,3 +78,7 @@
 <img src="https://raw.githubusercontent.com/sunilvijayan7/Saloon-Manager-Administrator-Blazor-DotNetCore-SignalR-SQLServer-Flutter-Firebase/main/Screenshots/Desktop/WorkingHours-staff-Desktop.JPG" />
 </p>
 
+
+- 💻 All of my projects are available at [http://www.sunilvijayan.com/](http://www.sunilvijayan.com/)
+
+- 📫 How to reach me **hi@sunilvijayan.com/**
