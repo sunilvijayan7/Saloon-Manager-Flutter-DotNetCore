@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SPA</title>
+    <base href="/" />
+    <link href="css/purple/bootstrap.min.css" rel="stylesheet" />
+    <link href="_content/DevExpress.Blazor/dx-blazor.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    
+    <style type="text/css">
+        .splash-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+            height: 100vh;
+            font-family: "Segoe UI",Roboto,"Helvetica Neue","-apple-system",BlinkMacSystemFont,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-size: .88rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+            .splash-screen .spinner-border {
+                border: .2em solid;
+                border-color: #5f368d #bfbfbf #bfbfbf;
+                width: 120px;
+                height: 120px;
+            }
+
+        .splash-screen-caption {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+        }
+
+        .splash-screen-text {
+            color: #a1a1a1;
+            margin-top: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <app>
+        <div class="splash-screen">
+            <div class="spinner-border"></div>
+            <div class="splash-screen-caption">SPA</div>
+            <div class="splash-screen-text">Loading...</div>
+        </div>
+    </app>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="site.js"></script>
+</body>
+
+</html>

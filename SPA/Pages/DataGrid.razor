@@ -1,0 +1,42 @@
+﻿@page "/datagrid"
+@inject HttpClient Http
+@using DevExpress.Blazor
+@using System.Threading
+
+<h2>Users</h2>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+   <DxDataGrid Data="@forecasts">
+        <DxDataGridDateEditColumn Caption="Date" Field="Date" />
+        <DxDataGridColumn Caption="Temperature" Field="TemperatureF" />
+    </DxDataGrid>
+
+}
+
+@code {
+    private WeatherForecast[] forecasts;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+
+}

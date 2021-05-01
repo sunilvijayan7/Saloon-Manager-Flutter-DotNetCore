@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+@using SPA.Portal.Theme
+
+<Header @bind-StateCssClass="@NavMenuCssClass" />
+
+<div class="main">
+    <div class="sidebar @NavMenuCssClass">
+        <NavMenu />
+    </div>
+    <div align="right" class="@($"theme-settings { ThemeSwitcherShown }")">
+        <a class="nav-item nav-link" @onclick="@ToggleThemeSwitcherPanel" href="javascript:void(0);">
+            <span class="oi oi-cog"></span>
+        </a>
+    </div>
+
+
+    <ThemeSwitcher @bind-Shown="@ThemeSwitcherShown"></ThemeSwitcher>
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
+@code{
+    string NavMenuCssClass { get; set; }
+}
+@code { bool themeSwitcherShown = false;
+            bool ThemeSwitcherShown
+            {
+                get => themeSwitcherShown;
+                set
+                {
+                    themeSwitcherShown = value;
+                    InvokeAsync(StateHasChanged);
+                }
+            }
+
+            void ToggleThemeSwitcherPanel()
+            {
+                ThemeSwitcherShown = !ThemeSwitcherShown;
+            } }
+

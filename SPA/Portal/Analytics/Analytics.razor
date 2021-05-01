@@ -1,0 +1,204 @@
+﻿
+@page "/analytics"
+@inject HttpClient Http
+@using DevExpress.Blazor
+@using System.Threading
+
+
+<DxTabs style="width:950px;padding:10px">
+    <DxTabPage Text="Analytics">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card h-100">
+                        <h1> Total Appointments</h1>
+                        <DxFormLayout ItemSizeMode="SizeMode">
+                            <DxFormLayoutItem Caption="Completed" ColSpanMd="6">
+                                <Template>
+                                    <DxTextBox @bind-Text="@Name"></DxTextBox>
+                                </Template>
+                            </DxFormLayoutItem>
+
+                            <DxFormLayoutItem Caption="Not Completed" ColSpanMd="6">
+                                <Template>
+                                    <DxTextBox @bind-Text="@Email"></DxTextBox>
+                                </Template>
+                            </DxFormLayoutItem>
+
+                            <DxFormLayoutItem Caption="Canceled" ColSpanMd="6">
+                                <Template>
+                                    <DxDateEdit @bind-Date="@BirthDate"></DxDateEdit>
+                                </Template>
+                            </DxFormLayoutItem>
+
+                            <DxFormLayoutItem Caption="No Show" ColSpanMd="6">
+                                <Template>
+                                    <DxSpinEdit @bind-Value="@YearsWorked"></DxSpinEdit>
+                                </Template>
+                            </DxFormLayoutItem>
+                        </DxFormLayout>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <h1> Staff Appointments</h1>
+                        <DxFormLayout ItemSizeMode="SizeMode2">
+                            <DxFormLayoutItem Caption="Contact Name:" ColSpanMd="6">
+                                <Template>
+                                    <DxTextBox @bind-Text="@Name2"></DxTextBox>
+                                </Template>
+                            </DxFormLayoutItem>
+
+                            <DxFormLayoutItem Caption="Email:" ColSpanMd="6">
+                                <Template>
+                                    <DxTextBox @bind-Text="@Email2"></DxTextBox>
+                                </Template>
+                            </DxFormLayoutItem>
+
+                            <DxFormLayoutItem Caption="Emsil" ColSpanMd="6">
+                                <Template>
+                                    <DxDateEdit @bind-Date="@BirthDate2"></DxDateEdit>
+                                </Template>
+                            </DxFormLayoutItem>
+
+                            <DxFormLayoutItem Caption="Years Worked:" ColSpanMd="6">
+                                <Template>
+                                    <DxSpinEdit @bind-Value="@YearsWorked2"></DxSpinEdit>
+                                </Template>
+                            </DxFormLayoutItem>
+
+                            <DxFormLayoutItem Caption="On Vacation:">
+                                <Template>
+                                    <DxCheckBox @bind-Checked="@OnVacation2"></DxCheckBox>
+                                </Template>
+                            </DxFormLayoutItem>
+                        </DxFormLayout>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top:20px">
+            <div class="row">
+                <div class="col">
+                    <div class="card h-100">
+                        <h1> Total Appointments</h1>
+                        <div class="card demo-card-wide">
+                            <div class="card-header">Test</div>
+                            <div class="card-body">
+                                <DxFormLayout>
+                                    <DxFormLayoutItem Caption="Question Text:" ColSpanMd="12">
+                                        <Template>
+                                            <DxTextBox @bind-Text=@QuestionText></DxTextBox>
+                                        </Template>
+                                    </DxFormLayoutItem>
+                                    <DxFormLayoutItem Caption="Question Name:" ColSpanMd="12">
+                                        <Template>
+                                            <DxTextBox @bind-Text=@QuestionName></DxTextBox>
+                                        </Template>
+                                    </DxFormLayoutItem>
+                                </DxFormLayout>
+
+                            </div>
+                        </div>
+                        @code{
+                            string questionName;
+                            string QuestionName { get => questionName; set { questionName = value;} }
+                            string questionText;
+                            string QuestionText { get => questionText; set { questionText = value;} }
+                        }
+                    </div>
+                </div>
+                </div>
+            </div>
+        <div class"row-fluid">
+            <div class="col-md-6">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Primary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Success card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Danger card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Warning card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Info card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Light card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h5 class="card-title">Dark card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+        
+</DxTabPage>
+    <DxTabPage Text="Reports">
+        <div class="p-3">
+            <b>Total Users</b>
+        </div>
+    </DxTabPage>
+</DxTabs>
+
+@code {
+
+    string Name { get; set; } = "Nancy Davolio";
+    string Email { get; set; } = "NancyDavolio@sample.com";
+    DateTime BirthDate { get; set; } = DateTime.Now.AddYears(-20);
+    int YearsWorked { get; set; } = 3;
+    bool OnVacation { get; set; } = true;
+    SizeMode SizeMode { get; set; }
+
+    string Name2 { get; set; } = "Nancy Davolio";
+    string Email2 { get; set; } = "NancyDavolio@sample.com";
+    DateTime BirthDate2 { get; set; } = DateTime.Now.AddYears(-20);
+    int YearsWorked2 { get; set; } = 3;
+    bool OnVacation2 { get; set; } = true;
+    SizeMode SizeMode2 { get; set; }
+
+
+}

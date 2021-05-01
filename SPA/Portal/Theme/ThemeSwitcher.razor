@@ -1,0 +1,57 @@
+﻿@if (!string.IsNullOrWhiteSpace(CurrentTheme))
+{
+<link rel="stylesheet" href="@("css/switcher-resources/themes/" + CurrentTheme.ToLower() + "/bootstrap.min.css")" />
+}
+
+<div id="settingsbar" class="@(Shown ? "" : "hidden-settings-bar")">
+    <nav id="themesMenu">
+        <ul class="nav nav-pills">
+            @foreach (var themeSet in themeData)
+            {
+            <li class="nav-item theme-group">@themeSet.Title</li>
+                @foreach (var theme in themeSet.Themes)
+                {
+            <li class="nav-item">
+            <a class="nav-link @(CurrentTheme == theme ? "active" : "") "
+               href="javascript:;"
+               @onclick="@(() => OnItemClick(theme))">
+                <span class="image @theme.ToLower().Replace(" ", "-")" aria-hidden="true"></span>
+                <span class="theme-name">@theme</span>
+            </a>
+            </li>
+           }}
+        </ul>
+    </nav>
+</div>
+
+@code { [Parameter] public bool Shown { get; set; }
+    [Parameter] public Action<bool> ShownChanged { get; set; }
+
+    string CurrentTheme = "byDefault";
+
+    public class ThemeSetModel
+    {
+        public string Title { get; }
+        public string[] Themes { get; }
+        public ThemeSetModel(string title, params string[] themes)
+        {
+            Title = title;
+            Themes = themes;
+        }
+    }
+
+    List<ThemeSetModel> themeData = new List<ThemeSetModel>() {
+        new ThemeSetModel("Color Themes",  "default"),
+        new ThemeSetModel("DevExpress Themes", "blazing berry", "purple", "office white"),
+        new ThemeSetModel("Bootswatch Themes", "cerulean", "cosmo", "cyborg", "darkly", "flatly", "journal", "litera",
+                          "lumen", "lux", "materia", "minty", "pulse", "sandstone", "simplex", "sketchy", "slate",
+                          "solar", "spacelab", "superhero", "united", "yeti")
+    };
+
+
+    void OnItemClick(string theme)
+    {
+        CurrentTheme = theme;
+        Shown = !Shown;
+        ShownChanged?.Invoke(Shown);
+    } }

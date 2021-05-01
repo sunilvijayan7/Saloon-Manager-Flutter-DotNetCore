@@ -1,0 +1,54 @@
+﻿
+@page "/users"
+@inject HttpClient Http
+@using DevExpress.Blazor
+@using System.Threading
+
+<h2>Users</h2>
+
+<DxTabs style="width:950px">
+    <DxTabPage Text="Description">
+        <div class="p-3">
+            <b>Total Users</b>
+        </div>
+    </DxTabPage>
+    <DxTabPage Text="Forecast">
+        <div class="py-3">
+            <DxDataGrid DataAsync="@GetForecastAsync" style="width:950px">
+                <DxDataGridDateEditColumn Field=@nameof(WeatherForecasts.Date) />
+                <DxDataGridSpinEditColumn Field=@nameof(WeatherForecasts.TemperatureC) Caption="Temp. (C)" />
+                <DxDataGridSpinEditColumn Field=@nameof(WeatherForecasts.TemperatureF) Caption="Temp. (F)" />
+                <DxDataGridColumn Field="@nameof(WeatherForecasts.CloudCover)" />
+                <DxDataGridCheckBoxColumn Field="@nameof(WeatherForecasts.Precipitation)" />
+            </DxDataGrid>
+        </div>
+    </DxTabPage>
+</DxTabs>
+
+@code {
+    public class WeatherForecasts
+    {
+        public DateTime Date { get; set; }
+        public int TemperatureC { get; set; }
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        public string CloudCover { get; set; }
+        public bool Precipitation { get; set; }
+    }
+    
+
+    String[] CloudCover = { "Sunny", "Partly cloudy", "Cloudy", "Storm" };
+
+    public Task<IEnumerable<WeatherForecasts>> GetForecastAsync(CancellationToken ct = default)
+    {
+        var rng = new Random();
+        DateTime startDate = DateTime.Now;
+        return Task.FromResult(Enumerable.Range(1, 7).Select(index => new WeatherForecasts
+        {
+            Date = startDate.AddDays(index),
+            TemperatureC = rng.Next(-15, 20),
+            CloudCover = CloudCover[rng.Next(0, CloudCover.Length)],
+            Precipitation = Convert.ToBoolean(rng.Next(0, 2))
+        }).AsEnumerable());
+    }
+
+}
